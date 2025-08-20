@@ -1,6 +1,9 @@
 import os, re, json, math, random, subprocess
 from typing import List
 
+def clean_html(text: str) -> str:
+    return text 
+
 def ensure_dir(p): os.makedirs(p, exist_ok=True)
 
 def synth_speech_espeak(text: str, wav_out: str, voice: str="en+f3", speed_wpm: int=170, pitch: int=35):
