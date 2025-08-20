@@ -1,5 +1,5 @@
 import os, random, csv, re, feedparser
-from utils import ensure_dir, clean_html if False else (lambda x: x)
+from utils import ensure_dir, clean_html
 
 STOPWORDS=set()
 def load_stopwords(path):
